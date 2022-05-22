@@ -1,0 +1,18 @@
+﻿<Window x:Class="hotel.All_Client"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel"
+        mc:Ignorable="d"
+        Title="Все Гости" Height="468" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" Margin="0,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" RenderTransformOrigin="0.216,0.486" Text="Все Гости"/>
+       
+        <DataGrid x:Name="table_grid" AutoGenerateColumns="True" Margin="28,74,28,26" FontFamily="Corbel" FontSize="18">
+           
+            </DataGrid>
+        
+
+    </Grid>
+</Window>

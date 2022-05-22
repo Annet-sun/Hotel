@@ -1,0 +1,32 @@
+﻿<Window x:Class="hotel.New_Bron"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel"
+        mc:Ignorable="d"
+        Title="Заселение в номер" Height="554" Width="498" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,0">
+        <TextBlock x:Name="l_fio" HorizontalAlignment="Center" Margin="0,26,0,0" Text="Фио" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" RenderTransformOrigin="0.216,0.486"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Text="Выберите категорию"/>
+        <Button x:Name="zareg_client_btn" Content="Забронировать" HorizontalAlignment="Center" Margin="0,353,0,0" VerticalAlignment="Top" Click="btn_bron_Click" FontFamily="Corbel" FontSize="22" Width="334" Height="42"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Text="Итого"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Text="Выберите количество мест"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Text="Выберите дату выселения"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Text="Выберите номер"/>
+        <ComboBox x:Name="choice_box_category" HorizontalAlignment="Left" Margin="262,78,0,0" VerticalAlignment="Top" Width="180" Height="25" SelectionChanged="change_category"/>
+        <ComboBox x:Name="choice_box_kolmest" HorizontalAlignment="Left" Margin="318,124,0,0" VerticalAlignment="Top" Width="124" Height="25" SelectionChanged="change_kol_mest"/>
+        <ComboBox x:Name="choice_box_room" HorizontalAlignment="Left" Margin="318,219,0,0" VerticalAlignment="Top" Width="124" Height="25" SelectionChanged="change_room"/>
+        <DatePicker x:Name ="date_out" SelectedDate="{Binding AvailableFrom, Mode=TwoWay}"
+        DisplayDate="{Binding DateTime.Now}"      HorizontalAlignment="Left" Margin="318,173,0,0" VerticalAlignment="Top" Width="124" SelectedDateChanged="change_date"/>
+        <TextBlock x:Name="l_day" HorizontalAlignment="Left" Margin="105,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Width="49" RenderTransformOrigin="1.278,0.603" TextAlignment="Right"><Run Language="ru-ru" Text="0"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="160,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Width="20" RenderTransformOrigin="1.278,0.603" TextAlignment="Center" Text="x"/>
+        <TextBlock x:Name="l_prise" HorizontalAlignment="Left" Margin="186,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Width="83" RenderTransformOrigin="1.278,0.603" TextAlignment="Left"><Run Language="ru-ru" Text="0"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="274,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Width="20" RenderTransformOrigin="1.278,0.603" TextAlignment="Center" Text="="/>
+        <TextBlock x:Name="l_sum" HorizontalAlignment="Left" Margin="299,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Width="92" RenderTransformOrigin="1.278,0.603" TextAlignment="Right"><Run Language="ru-ru" Text="0"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="403,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" Width="39" RenderTransformOrigin="1.278,0.603" TextAlignment="Center" Text="руб"/>
+        <Button x:Name="zareg_client_btn_Copy" Content="Забронировать и выдать квитанцию" HorizontalAlignment="Center" Margin="0,414,0,0" VerticalAlignment="Top" Click="btn_bron_and_bill_Click" FontFamily="Corbel" FontSize="22" Width="414" Height="42"/>
+
+    </Grid>
+</Window>
+

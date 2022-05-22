@@ -1,0 +1,21 @@
+﻿<Window x:Class="hotel.FindClientForKvitancia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel"
+        mc:Ignorable="d"
+        Title="Поиск посетителя для квитанции" Height="468" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="61,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" RenderTransformOrigin="0.216,0.486"><Run Language="ru-ru" Text="Выберите гостя"/></TextBlock>
+        <TextBox x:Name="t_search" HorizontalAlignment="Left" Margin="61,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="553" FontFamily="Corbel" FontSize="18" />
+        <Button  Content="Поиск" HorizontalAlignment="Left" Margin="637,62,0,0" VerticalAlignment="Top" Click="btn_search_Click" FontFamily="Corbel" FontSize="22" Width="100" Height="32"/>
+        <ListView x:Name="list_clients"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="61,113,63,59" FontFamily="Corbel" FontSize="16" SelectionChanged="ListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

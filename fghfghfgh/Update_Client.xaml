@@ -1,0 +1,24 @@
+﻿<Window x:Class="hotel.Update_Client"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel"
+        mc:Ignorable="d"
+        Title="Обновление данных Посетителя" Height="642" Width="456" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,0">
+        <TextBox x:Name="l_name" HorizontalAlignment="Center" Margin="0,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" FontFamily="Corbel" FontSize="18"/>
+        <TextBox x:Name="l_otch" HorizontalAlignment="Center" Margin="0,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="332" FontFamily="Corbel" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,24,0,0" Text="Фамилия" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel" RenderTransformOrigin="0.216,0.486"/>
+        <TextBox x:Name="l_fam" HorizontalAlignment="Center" Margin="0,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334" FontFamily="Corbel" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel"><Run Language="ru-ru" Text="Имя"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="61,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel"><Run Language="ru-ru" Text="Отчество"/></TextBlock>
+        <Button x:Name="zareg_client_btn" Content="Продолжить" HorizontalAlignment="Center" Margin="0,502,0,0" VerticalAlignment="Top" Click="btn_update_client_Click" FontFamily="Corbel" FontSize="22" Width="334" Height="42"/>
+        <TextBox x:Name="l_passport" HorizontalAlignment="Center" Margin="0,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334" FontFamily="Corbel" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel"><Run Text="Паспорт"/><Run Text=" "/><Run Text="(номер_серия"/><Run Language="ru-ru" Text=")"/></TextBlock>
+        <TextBox x:Name="l_telephone" HorizontalAlignment="Center" Margin="0,436,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="334" FontFamily="Corbel" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontFamily="Corbel"><Run Language="ru-ru" Text="Телефон"/></TextBlock>
+
+    </Grid>
+</Window>
+
